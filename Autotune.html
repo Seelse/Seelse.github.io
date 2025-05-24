@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
     	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     	<meta name="keywords" content="música,cantantes,longchamps,almirante brown,artitas,eventos,conciertos">
     	<meta name="description" content="(Sonido Sur es una revista de Argentina, Almirante Brown que busca mostrar música y artistas de aquí)">
     	<meta name="author" content="Juli,Mamá,Serena,Benjamin>
@@ -12,38 +12,72 @@
 
     	<!-- Java -->
     	<script src="js/jquery.js"></script>
-    	   <script src="js/load.js"></script>
-    	   <script src="js/jquery.dataTables.min.js"></script>
+    	<script src="js/load.js"></script>
+    	<script src="js/jquery.dataTables.min.js"></script>
+    	<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     	   
     	<!-- CSS -->
-    	<link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    	<link rel="stylesheet" href="css/principal.css">
+    	<link rel="stylesheet" href="css/articulos.css">
     </head>
     <body>
     	<header>
+    		 		<div class="header-content">
+
+            <div class="logo">
+                <h1>Sonido<b>Sur</b></h1>
+            </div>
+
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html" title="Inicio" rel="noopener"> <i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="#"> <i class="fab fa-youtube"> </i>Tutoriales</a></li>
+                        <li class="menu-selected"><a href="blog.html" class="text-menu-selected"> 
+                            <i class="fas fa-file-alt"></i>Experiencia</a></li>
+                        <li><a href="#"> <i class="fas fa-headset"></i> Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div id="ctn-icon-search">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
+
+            </div>
+
+            <div id="icon-menu">
+            	<i class="fas fa-bars"></i>
+            </div>	
     		<nav>
 	    		<ul>
-	    			<li><a href="index.html" title="Inicio" rel="noopener">Inicio</a></li>
-	    			<li><a href="ArtistasEmergentes.html" title="Artistas Emergentes" rel="noopener">Noticia</a></li>
-	    			<li><a href="ArtistasFamosos.html" title="Artistas Famosos" rel="noopener">Famosos</a></li>
-	    			<li><a href="Autotune.html" title="Auto-tune" rel="noopener">Autotune</a></li>
-	    			<li><a href="MusicaSociedad.html" title="Música y Sociedad" rel="noopener">Sociedad</a></li>
+	    			
 	    			<li><input type="search" placeholder="Buscar . . ." id="inputBusqueda"/></li>
+    		        <!-- buscador -->
+    		        <div class="search" id="search">
+    		        	<table class="search-tabla" id="searchTabla">
+    		 		    <thead><tr><td></td></tr></thead>
+    		 		    <tbody id="tabla"></tbody>
+    		 	        </table>
+    		            </div>
+    		            <div class="resultados"></div>
 	    		</ul>
 	    	</nav>
     	</header>
-    	<main>
-    		 <!-- buscador -->
-    		 <div class="search" id="search">
-    		 	<table class="search-tabla" id="searchTabla">
-    		 		<thead><tr><td></td></tr></thead>
-    		 		<tbody id="tabla"></tbody>
-    		 	</table>
-    		 </div>
-    		 <div class="resultados"></div>
-    	</main>
+    	<div class="container-all" id="move-content">
+
+    
+        <div class="article-container-cover">
+        	<div class="container-info-cover">
+            <h1>El Autotune y su importancia para la escena actual</h1>
+            </div>
+        </div>
+
+    <div class="container-content">
     	<article>
     		<section>
-    			<h1>El Autotune y su importancia para la escena actual</h1>
     			<h2>¿Es bueno usar Auto-tune?</h2>
     			<p>
     				Puede ser útil o perjudicial, dependiendo del contexto y la manera en que se utilice. Puede ayudar a corregir desafinaciones, facilitar la creación de demos o crear efectos interesantes, pero también puede ocultar la verdadera habilidad vocal de un artista y comprometer la autenticidad de una interpretación.
@@ -98,14 +132,36 @@
     			</p>
     		</section>
     	</article>
-    	<aside>
-    		<!-- Esto es el aside (contenido extra) -->
-    		<h2>aca va el aside</h2>
-    		<p>xD</p>
-    	</aside>
+    	<div class="container-aside">	
+
+            <aside>
+                a
+            </aside>
+
+            <aside>
+                a    
+            </aside>
+
+            <aside>
+            	a
+            </aside>
+        </div>
+    </div>
+    <div class="container-footer">	
     	<footer>
-    		<h4>Aca va el pie de página</h4>
+    		<div class="logo-footer">
+    				<img src="img/logo-magtimus-pro-.png" alt="">
+    			</div>
+    			<div class="redes-footer">
+    				<a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+    				<a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
+    				<a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+    			</div>
+    			<hr>
+    			<h4>© 2025 SonidoSur - Todos los Derechos Reservados</h4>
     	</footer>
+    </div>
     	<script src="js/buscador.js"></script>
+    	<script src="js/script.js"></script>
 	</body>
 </html>
